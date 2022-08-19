@@ -1,0 +1,4 @@
+[start]worker_id:SEU1999|worker_name:老王|worker_age:1970/6/12|date:2001/5/1|worker_degree:本科|title:讲师|area:160|address:江苏南京|{name:李&gender:男&age:20&appellation:test}{name:王喜顺&gender:男&age:52&appellation:父亲}[end]
+[start]worker_id:SEU2009|worker_name:老张|worker_age:1986/8/29|date:1990/11/6|worker_degree:本科|title:讲师|area:106|address:江苏苏州|{name:张姐&gender:女&age:26&appellation:妹妹}[end]
+[start]worker_id:SEU2006|worker_name:老李|worker_age:1996/5/12|date:2006/9/1|worker_degree:硕士|title:助教|area:0|address:无|{name:test&gender:女&age:13&appellation:testtttt}[end]
+[start]worker_id:SEU2001|worker_name:老徐|worker_age:1968/6/6|date:1980/11/21|worker_degree:博士|title:教授|area:189|address:江苏南京|{name:王姐&gender:女&age:55&appellation:配偶}[end]
