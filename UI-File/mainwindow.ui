@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1191</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HouseManager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>70</y>
+      <width>1001</width>
+      <height>441</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>职工信息</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1191</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuManagement">
+    <property name="title">
+     <string>管理职工数据</string>
+    </property>
+    <addaction name="actionChooseDatabase"/>
+    <addaction name="separator"/>
+    <addaction name="actionQueryRelatives"/>
+    <addaction name="actionEditWorkerInfo"/>
+    <addaction name="separator"/>
+    <addaction name="actionAddWorker"/>
+    <addaction name="actionAddRelativeForWorker"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuOther">
+    <property name="title">
+     <string>其他</string>
+    </property>
+    <addaction name="actionShowStarpoint"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuManagement"/>
+   <addaction name="menuOther"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionQueryRelatives">
+   <property name="text">
+    <string>查询亲属信息</string>
+   </property>
+  </action>
+  <action name="actionEditWorkerInfo">
+   <property name="text">
+    <string>修改/删除 职工/亲属 信息</string>
+   </property>
+  </action>
+  <action name="actionAddWorker">
+   <property name="text">
+    <string>添加职工</string>
+   </property>
+  </action>
+  <action name="actionAddRelativeForWorker">
+   <property name="text">
+    <string>为某一个职工添加亲属</string>
+   </property>
+  </action>
+  <action name="actionShowStarpoint">
+   <property name="text">
+    <string>查询职工积分信息</string>
+   </property>
+  </action>
+  <action name="actionChooseDatabase">
+   <property name="text">
+    <string>打开职工数据文件</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
